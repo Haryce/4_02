@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int* doubleArray(const int* arr, int size) {
+int* doubleArr(const int* arr, int size) {
     int* nArr = new int[size];
     for (int i = 0; i < size; i++) {
         nArr[i] = arr[i] * 2;
@@ -17,7 +17,7 @@ int main() {
         cin >> arr[i];
     }
 
-    int* arr1 = doubleArray(arr, size);
+    int* arr1 = doubleArr(arr, size);
     cout << "Новый массив (удвоенные значения): ";
     for (int i = 0; i < size; i++) {
         cout << arr1[i] << " ";
